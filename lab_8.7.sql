@@ -1,0 +1,9 @@
+USE LAB_8;
+DROP PROCEDURE IF EXISTS ShowAllProducts;
+DELIMITER $$
+CREATE PROCEDURE ShowAllProducts()
+BEGIN
+    SELECT * FROM Products;
+END $$
+DELIMITER ;
+CALL ShowAllProducts();
